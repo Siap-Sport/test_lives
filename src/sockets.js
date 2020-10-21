@@ -40,13 +40,24 @@ module.exports = function( io ){
                 updateNickName()
 
             }
+        });
+
+
+        socket.on('clave' , ( data , cb ) => {
+
+            if( data == "retergfd1245asd" ){
+                cb(true)
+            }else{
+                cb(false)
+            }
+            
         })
 
 
         socket.on('send message' , function( data ){  // Resive el mensaje
             io.sockets.emit('new message' , {    //De aqui envio informacion
                  msg : data,
-                 nick : socket.nickName
+                 nick : "Admin"
             }) // Retrasmit el mensaje
         })
         

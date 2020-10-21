@@ -6,6 +6,7 @@ $( function() {
     //Obteniendo los elementos del dom desde la interfaz
      const $messageForm = $('#message-form');
      const $messageBox = $('#message');
+     const $ponerInput = document.getElementById("message")
      const $chat = $('#chat');
 
     //Obteniendo los elementos del dom desde la interfas - Nick name form
@@ -20,9 +21,26 @@ $( function() {
     const $dislikeDos = $("#dislikeMal");
     const $dislikeImprimir = $("#dislikeP")
     const $pintarDislike = document.querySelector('#dislikeMal')
+    const $login = $("#login");
+    const $clave = $("#clave");
+    const $boton = $("#activarBoton")
+    const $inputDos = $("#activarInput")
     let   comprovarDatos = false;
+
+
     
-    
+    $login.click( e => {
+        e.preventDefault();
+        socket.emit('clave' , $clave.val() , x => {
+            if( x ){
+                $ponerInput.removeAttribute("readonly"); 
+                // $boton.html(`<button type="submit" class="btn  boton">Enviar</button>`);
+                //muestres el boton para enviar mesajes por char
+            }else{
+                'mal'
+            }
+        })
+    } )
     
     
     

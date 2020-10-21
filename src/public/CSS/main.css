@@ -1,199 +1,458 @@
-body{
-background: linear-gradient(to right, #123556, #123556); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+  background: linear-gradient(
+    to right,
+    #123556,
+    #123556
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#contentWrap{
-    display: none;
+#contentWrap {
+  display: none;
 }
 
-.logo{
-    margin-top: 15px;
+.logo {
+  margin-top: 15px;
 }
 
- .boxGame{
-    display: flex;
-    /* background: blanchedalmond; */
-    justify-content: center;
+.loginCaja{
+
+  padding: 3px 10px;
+  border: 1px solid  #123556;
+  border-radius: 7px;
+  position: absolute;
+  right: 0;
+  margin-top: -5  px;
+  color: #1180e7;
+  cursor: pointer;
 }
+
+.loginCaja p{
+  color:  #123556;
+  
+}
+
+.pin{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+.pin input{
+  width: 65px;
+  border-radius: 5px;
+}
+
+
+
+
+.logo p{
+  border-radius: 5px;
+  padding: 3px 10px;
+  background-color: white;
+}
+
+
+.datosLogin{
+  float: right;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.boxGame {
+  display: flex;
+  /* background: blanchedalmond; */
+  justify-content: center;
+}
+
+.nameGame{
+  width: 100%;
+}
+
+.nameGame h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #123556;
+  background: rgb(228, 228, 228);
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
+  /* width: 150px; */
+  /* height: 20px; */
+}
+
+.boxLive {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.liveTx {
+  border: 1px solid rgba(255, 0, 0, 0.616);
+  margin-left: 15px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.redesSociales {
+  /* border: 1px solid rgba(132, 145, 189, 0.527); */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 560px;
+  /* background-color: rgb(223, 210, 210); */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.041);
+}
+
+.links a {
+  color: black;
+  color: white;
+}
+
+.links a:hover {
+  text-decoration: none;
+  color: rgba(116, 121, 170, 0.952);
+}
+
+
+.boxLiveDos {
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-weight: 600;
+  color: white;
+  display: inline;
+}
+
+.enLinea {
+  margin-right: 50px;
+}
+
+.cajaChat {
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardBox {
+  background-color: rgba(251, 251, 251, 0.924);
+  width: 560px;
+}
+
+.card-header g4 {
+  font-weight: 700;
+}
+
+.card-body {
+  height: 200px;
+}
+
+.input-group-append button {
+  color: white;
+  background-color: #123556da;
+}
+
+.input-group-append button:hover {
+  color: white;
+  background-color: #204e79da;
+}
+
+.linksDos span:nth-child(1) {
+  /* margin-left: 150px; */
+}
+
+.material-icons {
+  margin: 0 10px;
+  color: white;
+  float: left;
+}
+
+.like span {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.linksDos {
+  display: flex;
+  width: 100%;
+  /* background-color: seagreen; */
+  justify-content: center;
+}
+
+.like {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.034);
+  flex-grow: 1;
+  cursor: pointer;
+
+  /* margin-left: 10px; */
+}
+
+.dedos span:hover {
+  color: rgb(142, 179, 246);
+}
+
+.enLineaDos {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  border: 0.01px solid rgba(255, 255, 255, 0.123);
+  border-radius: 5px;
+  /* background-color: salmon; */
+  /* background: linear-gradient(to right, #240b36, #c31432); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  top: 15px;
+  left: 50px;
+  flex-grow: 10;
+}
+
+.enLineaDos span {
+  position: relative;
+  margin-top: 10px;
+}
+
+#likeP {
+  color: white;
+}
+
+/* MFLEX PRINCIPAL */
+.flexMainColumnas {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgba(79, 86, 153, 0.952); */
+  justify-content: center;
+}
+
+/* FLEX FILAS */
+
+.flexMainFilaUno {
+  display: flex;
+   /* flex-wrap: wrap;  */
+  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+
+/*  CAJA QUE ESTA DIVIDIDA EN DOS  */
+.filaUno-2{
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: rgb(212, 221, 94); */
+  flex-grow: 1;
+   order: 0; 
+  /* width: 300px; */
+}
+/*  FIN CAJA QUE ESTA DIVIDIDA EN DOS  */
+
+
+
+.filaUno-3{
+  /* background-color: rgb(79, 48, 216); */
+   /* flex-grow: 1;  */
+   order: 1;
+}
+
+.filaUno-4{
+  /* background-color: rgb(174, 101, 233); */
+  display: flex;
+  flex-grow: 1;
+  order: 2;
+  /* order: 1; */
+  /* width: 300px; */
+}
+
+
+
+/* --------------------------------------------------- CAJA DENTRO ----------------------*/
+.f2-1{    /* Cuadro 1 */
+  margin: 10px;
+  min-width: 250px;
+  max-width: 270px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+
+.f2-2{ /* Cuadro 2 */
+
+  min-width: 250px;
+  /* background-color: rgba(128, 86, 86, 0.5); */
+  margin: 10px;
+  max-width: 270px;
+}
+
+
+
+.f4-1{ /* Cuadro 3 */
+  margin: 10px;
+  /* background-color: rgba(128, 86, 86, 0.5); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  min-width: 250px;
+  max-width: 270px;
+}
+
+
+.f4-2{ /* Cuadro 4 */
+  min-width: 250px;
+  margin: 10px;
+  /* background-color: rgba(128, 86, 86, 0.5); */
+  max-width: 270px;
+}
+/* --------------------------------------------------- FIN CAJA DENTRO  ----------------------------------*/
+
+
+
+
+
+
+
+/* FLEX COLUMNAS */
+.flexMainFilaDos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.filaDos {
+  width: 50px;
+  height: 4px;
+}
+
+.flexMainFilaDos div:nth-child(1) {
+  background-color: rgb(17, 216, 103);
+  flex-grow: 5;
+}
+
+.flexMainFilaDos div:nth-child(2) {
+  background-color: rgb(207, 194, 4);
+  flex-grow: 5;
+}
+
+.flexMainFilaDos div:nth-child(3) {
+  background-color: rgb(212, 33, 33);
+  flex-grow: 5;
+}
+
+.flexMainFilaDos div:nth-child(4) {
+  background-color: rgb(52, 55, 241);
+  flex-grow: 5;
+}
+
+.flexMainFilaDos div:nth-child(5) {
+  background-color: rgb(172, 40, 212);
+  flex-grow: 5;
+}
+
+/* MEDIDA ESTANDAR PARA CEULARES TANTO VERTICAL COMO ORIZONTAL */
+
+
+
+
+
+/* FILA 4 CAJA 1 */
+
+.f4-1-info{
+  /* background-color: rgb(223, 211, 188); */
+  /* text-align: center; */
+
+}
+
+.f4-1-info h4{
+  color: #123556;
+  font-weight: 400;
+  font-size: 18px;
+  /* height: 300px; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.322) ;
+}
+
+
+.f4-1-info table{
+  border-collapse: separate;
+  width: 100%;  /* ---------------------- */
+  border-spacing: 0 2px;
+  /* text-align: center; */
+}
+
+.f4-1-info th{
+  font-size: 15px;
+  font-weight: 500;
+     background-color: rgb(216, 211, 211); 
+  color: rgba(0, 0, 0, 0.342);
+  margin:  15px 0;
+  color: rgb(14, 118, 149);
+}
+
+
+.f4-1-info td{
+  color: white;
+  background-color: rgba(255, 254, 253, 0.061);
+}
+
+
+
+
+/* TABLA FILA SOBRE PARTIDS POR TRASMITIR */
+.f2-1-info th{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+     background-color: rgb(236, 233, 233); 
+  color: rgba(0, 0, 0, 0.342);
+  color: rgb(14, 118, 149);
+}
+/*FIN TABLA FILA SOBRE PARTIDS POR TRASMITIR */
+
+
+
+@media screen and ( max-width : 1113px ){
+
+  .flexMainFilaUno{
+    flex-wrap: wrap;
+  }
  
+  
+  /* ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
+  .filaUno-3{
+    order: 0;
+  }
+  .filaUno-2{
+    order: 1;
+  }
+  .filaUno-4{
+    order: 2;
+  }
+  /*FIN - ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
 
 
-.nameGame h1{
-    font-size: 20px;
-    text-align: center;
-    color: #123556;
-    background: rgb(228, 228, 228);
-    padding: 10px 15px 10px 15px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 3px rgba(0,0,0, 0.6);
-    /* width: 150px; */
-    /* height: 20px; */
-}
-
-.boxLive{
-    display: flex;
+  .filaUno-2{
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+    /* width: 300px; */
+  }
+
+  .f2-1{
+    display: none;
+  }
+  
+
+  .filaUno-4{
+   justify-content: center;
+  }
 
 
-.liveTx{
-    border: 1px solid rgba(255, 0, 0, 0.616);
-    margin-left: 15px;
-    padding: 2px;
-    border-radius: 5px;
-}
+  .f4-2{
+    display: none;
+  }
+  
 
-
-
-.redesSociales{
-    /* border: 1px solid rgba(132, 145, 189, 0.527); */
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 560px;
-    /* background-color: rgb(223, 210, 210); */
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.041)  ;
-}
-
-
-.links a{
-    color: black;
-    color: white;
-}
-
-
-.links a:hover{
-    text-decoration: none;
-    color: rgba(116, 121, 170, 0.952);
-}
-
-.links a:nth-child(1){
-    margin-right: 100px;
-}
-
-
-.boxLiveDos{
-    margin-top: 7px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
- p{
-    font-weight: 600;
-    color:white;
-    display: inline;
-}
-
-
-
-.enLinea{
-
-    margin-right: 50px;
-    
-}
-
-.cajaChat{
-    margin-top: 7px;
-    display: flex;
-    justify-content: center;
-}
-
-.cardBox{
-    background-color: rgba(251, 251, 251, 0.924);
-    width: 560px;
-}
-
-.card-header g4{
-    font-weight: 700;
-}
-
-.card-body{
-    height: 200px;
-}
-
-.input-group-append button{
-    color: white;
-    background-color: #123556da;
-}
-
-
-.input-group-append button:hover{
-    color: white;
-    background-color: #204e79da;
-}
-
-.linksDos  span:nth-child(1){
-    /* margin-left: 150px; */
-}
-
-.material-icons{
-    margin: 0 10px;
-    color: white;
-    float: left;
-}
-
-
-
-
-.like span{
-    text-shadow: 3px 3px 3px rgba(0,0,0 , 0.5);
-}
-
-
-.linksDos{
-    display: flex;
-    width: 100%;
-    /* background-color: seagreen; */
-    justify-content: center;
-}
-
-
-.like{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 255, 0.034);
-    flex-grow: 1;
-    cursor: pointer;
-    
-    /* margin-left: 10px; */
-}
-
-
-.dedos span:hover{
-    color: rgb(142, 179, 246);
-}
-
-.enLineaDos{
-    /* position: relative; */
-    display: flex;
-    justify-content: center;
-    border: 0.01px solid rgba(255, 255, 255, 0.123);
-    border-radius: 5px;
-    /* background-color: salmon; */
-    /* background: linear-gradient(to right, #240b36, #c31432); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    top: 15px;
-    left: 50px;
-    flex-grow: 10;
-}
-
-
-
-.enLineaDos span{
-    position: relative;
-    margin-top: 10px;
-}
-
-
-#likeP{
-    color: white;
+  
 }
