@@ -1,12 +1,199 @@
 body{
-    background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-color: white;
-
+background: linear-gradient(to right, #123556, #123556); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #contentWrap{
     display: none;
+}
+
+.logo{
+    margin-top: 15px;
+}
+
+ .boxGame{
+    display: flex;
+    /* background: blanchedalmond; */
+    justify-content: center;
+}
+ 
+
+
+.nameGame h1{
+    font-size: 20px;
+    text-align: center;
+    color: #123556;
+    background: rgb(228, 228, 228);
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 3px rgba(0,0,0, 0.6);
+    /* width: 150px; */
+    /* height: 20px; */
+}
+
+.boxLive{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.liveTx{
+    border: 1px solid rgba(255, 0, 0, 0.616);
+    margin-left: 15px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+
+
+.redesSociales{
+    /* border: 1px solid rgba(132, 145, 189, 0.527); */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 560px;
+    /* background-color: rgb(223, 210, 210); */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.041)  ;
+}
+
+
+.links a{
+    color: black;
+    color: white;
+}
+
+
+.links a:hover{
+    text-decoration: none;
+    color: rgba(116, 121, 170, 0.952);
+}
+
+.links a:nth-child(1){
+    margin-right: 100px;
+}
+
+
+.boxLiveDos{
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+ p{
+    font-weight: 600;
+    color:white;
+    display: inline;
+}
+
+
+
+.enLinea{
+
+    margin-right: 50px;
+    
+}
+
+.cajaChat{
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardBox{
+    background-color: rgba(251, 251, 251, 0.924);
+    width: 560px;
+}
+
+.card-header g4{
+    font-weight: 700;
+}
+
+.card-body{
+    height: 200px;
+}
+
+.input-group-append button{
+    color: white;
+    background-color: #123556da;
+}
+
+
+.input-group-append button:hover{
+    color: white;
+    background-color: #204e79da;
+}
+
+.linksDos  span:nth-child(1){
+    /* margin-left: 150px; */
+}
+
+.material-icons{
+    margin: 0 10px;
+    color: white;
+    float: left;
+}
+
+
+
+
+.like span{
+    text-shadow: 3px 3px 3px rgba(0,0,0 , 0.5);
+}
+
+
+.linksDos{
+    display: flex;
+    width: 100%;
+    /* background-color: seagreen; */
+    justify-content: center;
+}
+
+
+.like{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.034);
+    flex-grow: 1;
+    cursor: pointer;
+    
+    /* margin-left: 10px; */
+}
+
+
+.dedos span:hover{
+    color: rgb(142, 179, 246);
+}
+
+.enLineaDos{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    border: 0.01px solid rgba(255, 255, 255, 0.123);
+    border-radius: 5px;
+    /* background-color: salmon; */
+    /* background: linear-gradient(to right, #240b36, #c31432); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    top: 15px;
+    left: 50px;
+    flex-grow: 10;
+}
+
+
+
+.enLineaDos span{
+    position: relative;
+    margin-top: 10px;
+}
+
+
+#likeP{
+    color: white;
 }
