@@ -21,7 +21,7 @@ body {
   border-radius: 7px;
   position: absolute;
   right: 0;
-  margin-top: -5  px;
+  margin-top: -5px;
   color: #1180e7;
   cursor: pointer;
 }
@@ -45,6 +45,10 @@ body {
 
 
 
+
+
+
+
 .logo p{
   border-radius: 5px;
   padding: 3px 10px;
@@ -59,27 +63,8 @@ body {
   height: 30px;
 }
 
-.boxGame {
-  display: flex;
-  /* background: blanchedalmond; */
-  justify-content: center;
-}
 
-.nameGame{
-  width: 100%;
-}
 
-.nameGame h1 {
-  font-size: 20px;
-  text-align: center;
-  color: #123556;
-  background: rgb(228, 228, 228);
-  padding: 5px 15px 5px 15px;
-  border-radius: 5px;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
-  /* width: 150px; */
-  /* height: 20px; */
-}
 
 .boxLive {
   display: flex;
@@ -104,8 +89,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 560px;
-  /* background-color: rgb(223, 210, 210); */
+  width: 100%;
   padding: 10px;
   background: rgba(255, 255, 255, 0.041);
 }
@@ -140,14 +124,14 @@ p {
 }
 
 .cajaChat {
-  margin-top: 7px;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
 }
 
 .cardBox {
   background-color: rgba(251, 251, 251, 0.924);
-  width: 560px;
+  width: 100%
 }
 
 .card-header g4 {
@@ -168,9 +152,7 @@ p {
   background-color: #204e79da;
 }
 
-.linksDos span:nth-child(1) {
-  /* margin-left: 150px; */
-}
+
 
 .material-icons {
   margin: 0 10px;
@@ -228,88 +210,128 @@ p {
   color: white;
 }
 
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+
 /* MFLEX PRINCIPAL */
 .flexMainColumnas {
   display: flex;
   flex-direction: column;
   /* background-color: rgba(79, 86, 153, 0.952); */
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 /* FLEX FILAS */
-
 .flexMainFilaUno {
   display: flex;
-   /* flex-wrap: wrap;  */
   justify-content: center;
-  /* align-items: center; */
-  /* justify-content: space-between; */
+  flex-wrap: wrap;
 }
 
 
-/*  CAJA QUE ESTA DIVIDIDA EN DOS  */
+
+
+/*  TRES CAJAS PRINCIPALES */
 .filaUno-2{
   display: flex;
-  justify-content: flex-end;
-  /* background-color: rgb(212, 221, 94); */
+  justify-content: center;
+  background-color: rgb(212,   221, 94);
   flex-grow: 1;
    order: 0; 
-  /* width: 300px; */
 }
-/*  FIN CAJA QUE ESTA DIVIDIDA EN DOS  */
-
-
 
 .filaUno-3{
-  /* background-color: rgb(79, 48, 216); */
-   /* flex-grow: 1;  */
-   order: 1;
+  background-color: #00257A;
+  display: flex;
+  justify-content: center;
+  order: 1;
 }
 
 .filaUno-4{
-  /* background-color: rgb(174, 101, 233); */
-  display: flex;
+  background-color: rgb(174, 101, 233);
+  display: flex;  
+  justify-content: center;
   flex-grow: 1;
   order: 2;
-  /* order: 1; */
-  /* width: 300px; */
 }
+/* FIN TRES CAJAS PRINCIPALES */
+
+
+
+
+
+/* VIDEOOO VIVO */
+.video-vivo{
+  background-color: brown;
+   width: 100%;
+}
+
+.video-vivo iframe{
+  width: 100%;
+}
+
+/* FIN VIDEOOO VIVO */
+
+
+
+
+
+
+/* CENTRO  DE LAS TRES CAJAS PRINCIPALES */
+.cajaFilaUno-3{
+  min-width: 530px;
+  max-width: 630px;
+  /* width: 100%; */
+}
+
+.nameGame h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #123556;
+  background: rgb(228, 228, 228);
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
+}
+/*FIN CENTRO  DE LAS TRES CAJAS PRINCIPALES */
+
+
 
 
 
 /* --------------------------------------------------- CAJA DENTRO ----------------------*/
 .f2-1{    /* Cuadro 1 */
   margin: 10px;
-  min-width: 250px;
-  max-width: 270px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-grow: 1;
 }
-
 
 .f2-2{ /* Cuadro 2 */
-
-  min-width: 250px;
-  /* background-color: rgba(128, 86, 86, 0.5); */
+  display: flex;
+  justify-content: center;
   margin: 10px;
-  max-width: 270px;
+  background-color: rgb(202, 37, 37);
+  width: 100%;
+  max-width: 340px;
+  min-width: 218px;
 }
-
-
 
 .f4-1{ /* Cuadro 3 */
+  display: flex;
   margin: 10px;
-  /* background-color: rgba(128, 86, 86, 0.5); */
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  min-width: 250px;
-  max-width: 270px;
+  background-color: rgba(128, 86, 86, 0.5);
+  width: 100%;
+  width: 340px;
+  min-width: 218px;
+  /* min-width: 200px; */
 }
 
-
 .f4-2{ /* Cuadro 4 */
-  min-width: 250px;
   margin: 10px;
-  /* background-color: rgba(128, 86, 86, 0.5); */
-  max-width: 270px;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-grow: 1;
 }
 /* --------------------------------------------------- FIN CAJA DENTRO  ----------------------------------*/
 
@@ -357,40 +379,41 @@ p {
   flex-grow: 5;
 }
 
-/* MEDIDA ESTANDAR PARA CEULARES TANTO VERTICAL COMO ORIZONTAL */
 
 
 
 
 
-/* FILA 4 CAJA 1 */
-
+/* FILA 4 TABLA DOS */
 .f4-1-info{
+  min-width: 100%;
   /* background-color: rgb(223, 211, 188); */
-  /* text-align: center; */
-
 }
+
+.f4-1-info table{
+  max-width: 100%;
+}
+
+
 
 .f4-1-info h4{
   color: #123556;
   font-weight: 400;
   font-size: 18px;
-  /* height: 300px; */
   border-bottom: 1px solid rgba(0, 0, 0, 0.322) ;
 }
 
 
 .f4-1-info table{
   border-collapse: separate;
-  width: 100%;  /* ---------------------- */
+  width: 100%; 
   border-spacing: 0 2px;
-  /* text-align: center; */
 }
 
 .f4-1-info th{
   font-size: 15px;
   font-weight: 500;
-     background-color: rgb(216, 211, 211); 
+  background-color: rgb(216, 211, 211); 
   color: rgba(0, 0, 0, 0.342);
   margin:  15px 0;
   color: rgb(14, 118, 149);
@@ -401,30 +424,116 @@ p {
   color: white;
   background-color: rgba(255, 254, 253, 0.061);
 }
+/*FIN FILA 4 TABLA DOS */
 
 
 
 
 /* TABLA FILA SOBRE PARTIDS POR TRASMITIR */
-.f2-1-info th{
-  text-align: center;
-  font-size: 15px;
-  font-weight: 500;
-     background-color: rgb(236, 233, 233); 
-  color: rgba(0, 0, 0, 0.342);
-  color: rgb(14, 118, 149);
+
+
+
+.f2-1-info{
+  display: flex;
+  flex-direction: column;
 }
+
+.f2-2 img{
+  width: 100%;
+}
+
+
 /*FIN TABLA FILA SOBRE PARTIDS POR TRASMITIR */
+/* ----------------------------------------------------1516px------------------------------------------------------ */
+@media ( max-width : 1562px ){
+  .f4-1{ /* Cuadro 3 */
+    display: flex;
+    margin: 10px;
+    background-color: rgba(128, 86, 86, 0.5);
+    width: 100%;
+    max-width: 470px;
+    min-width: 218px;
+    /* min-width: 200px; */
+  }
+}
 
 
 
-@media screen and ( max-width : 1113px ){
 
+/* ----------------------------------------------------1251px------------------------------------------------------ */
+@media( max-width : 1318px ){
+
+  /* ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
+  .filaUno-3{
+    order: 0;
+    flex-grow: 200;
+  }
+  .filaUno-2{
+    max-width: 350px;
+    order: 1;
+    flex-grow: 1;
+  }
+  .filaUno-4{
+    width: 400px;
+    order: 1;
+  }
+  /*FIN - ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
+  
+  
+  .f2-1{
+    display: none;
+  }
+
+  .f4-2{
+    display: none;
+  }
+
+  .cajaChat {
+  margin: 10px 15px 0 15px;
+  
+}
+}
+
+
+
+
+/* ----------------------------------------------------1113px------------------------------------------------------ */
+@media( max-width : 1113px ){
+
+
+  
+  
+  
+  
+  /* HACIENDO QUE LOS PROXIMOS PATIDOS NO SEAN MAS GRANDES QUE LA PANTALLA DE LA TRASMICION */
+  .filaUno-2{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(212,   221, 94);
+    flex-grow: 1;
+     order: 0; 
+  }
+  
+  .filaUno-3{
+    background-color: #00257A;
+    flex-grow: 2;
+    order: 1;
+  }
+  
+  .filaUno-4{
+    background-color: rgb(174, 101, 233);
+    display: flex;  
+    justify-content: center;
+    /* flex-grow: 1; */
+    order: 2;
+  }
+  /* FIN HACIENDO QUE LOS PROXIMOS PATIDOS NO SEAN MAS GRANDES QUE LA PANTALLA DE LA TRASMICION */
+  
+  
+  
   .flexMainFilaUno{
     flex-wrap: wrap;
   }
- 
-  
   /* ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
   .filaUno-3{
     order: 0;
@@ -433,30 +542,53 @@ p {
     order: 1;
   }
   .filaUno-4{
-    order: 2;
+    order: 1;
   }
   /*FIN - ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
 
-
-  .filaUno-2{
-    justify-content: center;
-    /* width: 300px; */
-  }
-
-  .f2-1{
-    display: none;
-  }
-  
-
-  .filaUno-4{
-   justify-content: center;
-  }
-
-
-  .f4-2{
-    display: none;
-  }
-  
-
   
 }
+
+/* ----------------------------------------------------766px------------------------------------------------------ */
+@media( max-width : 766px ){
+  .filaUno-2{
+    justify-content: center;
+    /* background-color: rgb(218, 98, 18); */
+    min-width: 100%;
+  }
+
+  .f2-1-info img{
+    display: flex;
+    max-width: 100%;
+  }
+  
+  .f2-2{
+    background: crimson;
+    max-width: 470px;
+    /* max-height: 450px; */
+
+  }
+  
+}
+
+
+
+
+
+/* ----------------------------------------------------411px------------------------------------------------------ */
+
+ @media( max-width : 415px ){
+  .f2-2{ 
+    max-width: 100%;
+    background-color: rgb(40, 192, 60);
+  }
+
+  .f4-1{
+    max-width: 100%;
+  }
+  
+  .f4-1-info{
+    width: 100%;
+  }
+  
+} 
