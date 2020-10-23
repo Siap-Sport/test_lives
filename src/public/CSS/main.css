@@ -204,6 +204,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /* background-color: darkgoldenrod; */
 }
 
 
@@ -211,20 +212,20 @@ p {
 .filaUno-2{
   display: flex;
   justify-content: center;
-  background-color: rgb(212,   221, 94);
+  /* background-color: rgb(65, 197, 83); */
   flex-grow: 1;
    order: 0;
 }
 
 .filaUno-3{
-  background-color: #00257A;
+  /* background-color: #00257A; */
   display: flex;
   justify-content: center;
   order: 1;
 }
 
 .filaUno-4{
-  background-color: rgb(174, 101, 233);
+  /* background-color: rgb(174, 101, 233); */
   display: flex;
   justify-content: center;
   flex-grow: 1;
@@ -248,8 +249,9 @@ p {
 
 /* CENTRO  DE LAS TRES CAJAS PRINCIPALES */
 .cajaFilaUno-3{
-  min-width: 530px;
+  min-width: 630px;
   max-width: 630px;
+  /* background-color: crimson; */
   /* width: 100%; */
 }
 
@@ -274,9 +276,10 @@ p {
 
 .f2-2{ /* Cuadro 2 */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 10px;
-  background-color: rgb(202, 37, 37);
+  /* background-color: rgb(202, 37, 37); */
   width: 100%;
   max-width: 340px;
   min-width: 218px;
@@ -284,8 +287,9 @@ p {
 
 .f4-1{ /* Cuadro 3 */
   display: flex;
+  flex-direction: column;
   margin: 10px;
-  background-color: rgba(128, 86, 86, 0.5);
+  /* background-color: rgba(128, 86, 86, 0.5); */
   width: 100%;
   width: 340px;
   min-width: 218px;
@@ -390,35 +394,76 @@ p {
 /*FIN TABLA FILA SOBRE PARTIDS POR TRASMITIR */
 
 
+/* TABLA SELECCION ------------*/
+.seleccionECU{
+  margin-top: 10px;
+}
+
+
+
+.seleccionECU table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 2px;
+}
+
+
+.seleccionECU th{
+  background-color: rgba(240, 248, 255, 0.829);
+  font-weight: 500;
+  color: #3c6fe7;
+}
+
+.seleccionECU td{
+  background-color: rgba(240, 248, 255, 0.075);
+  color: white;
+}
+/* FIN TABLA SELECCION ----------*/
+
+
 /* ----------------------------------------------------1516px------------------------------------------------------ */
 @media ( max-width : 1562px ){
   .f4-1{ /* Cuadro 3 */
     display: flex;
     margin: 10px;
-    background-color: rgba(128, 86, 86, 0.5);
-    width: 100%;
+    /* background-color: rgba(128, 86, 86, 0.5); */
     max-width: 470px;
     min-width: 218px;
   }
 }
 
 
-/* ----------------------------------------------------1251px------------------------------------------------------ */
-@media( max-width : 1318px ){
+/* ----------------------------------------------------1318px------------------------------------------------------ */
+@media( max-width : 1391px ){
+
+  /* PADRE DE LA PRIMERA FILA */
+  .flexMainFilaUno{
+    display: flex;
+    /* background-color: darkgoldenrod; */
+  }
+  /* FIN PADRE DE LA PRIMERA FILA */
+  
+
+  /* TABLA DE POSICIONES DE LOS JUGADORES */
+  .f4-1{
+    /* background-color: #123556; */
+  }
+  /* FIN TABLA DE POSICIONES DE LOS JUGADORES */
+  
 
   /* ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
   .filaUno-3{
-    order: 0;
-    flex-grow: 200;
+    order: 2;
+    /* flex-grow: 200; */
   }
   .filaUno-2{
     max-width: 350px;
     order: 1;
-    flex-grow: 1;
+    /* flex-grow: 1; */
   }
   .filaUno-4{
-    width: 400px;
-    order: 1;
+    /* width: 400px; */
+    order: 3;
   }
   /*FIN - ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
 
@@ -435,75 +480,83 @@ p {
   margin: 10px 15px 0 15px;
 
 }
+
+  /* CAJA DEL CENTRO PARA QUE NO OCUPE POCO ESPACIO */
+
+
+}
+
+/* ----------------------------------------------------1281PX------------------------------------------------------ */
+@media ( max-width : 1281px ){
+  .cajaFilaUno-3{
+    width: 100%;
+    max-width: 630px;
+    /* background-color: rgb(65, 65, 141); */
+  }
 }
 
 
-/* ----------------------------------------------------1113px------------------------------------------------------ */
-@media( max-width : 1113px ){
 
+/* ----------------------------------------------------1000px------------------------------------------------------ */
+@media( max-width : 1000px ){
+
+
+  .f2-2{ /* Cuadro 2 */
+    display: flex;
+    width: auto;
+  }
+  
   .cajaFilaUno-3{
-    min-width: auto;
-    max-width: auto;
-    /* width: 100%; */
+    max-width: 630px;
   }
 
-
   /* HACIENDO QUE LOS PROXIMOS PATIDOS NO SEAN MAS GRANDES QUE LA PANTALLA DE LA TRASMICION */
+  /* tres cajas principales */
   .filaUno-2{
     display: flex;
     justify-content: center;
-    background-color: rgb(212,   221, 94);
-    flex-grow: 1;
-     order: 0;
+    /* background-color: rgb(36, 83, 110); */
+    max-width: 100%;
   }
 
   .filaUno-3{
-    background-color: #00257A;
+    /* background-color: #00257A; */
     flex-grow: 2;
-    order: 1;
+    order: 0;
   }
 
   .filaUno-4{
-    background-color: rgb(174, 101, 233);
+    background-color: #1d3f5f;
     display: flex;
     justify-content: center;
     /* flex-grow: 1; */
     order: 2;
   }
+  /*fin tres cajas principales */
   /* FIN HACIENDO QUE LOS PROXIMOS PATIDOS NO SEAN MAS GRANDES QUE LA PANTALLA DE LA TRASMICION */
-
 
   .flexMainFilaUno{
     flex-wrap: wrap;
   }
-  /* ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
-  .filaUno-3{
-    order: 0;
+
+  /* CAJA DEL VIDEO */
+  .cajaFilaUno-3{
+    width: 100%;
+    /* background-color: rgb(65, 65, 141); */
   }
-  .filaUno-2{
-    order: 1;
-  }
-  .filaUno-4{
-    order: 1;
-  }
-  /*FIN - ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
+  /* FIN CAJA DEL VIDEO */
+  
 }
 
 
 /* ----------------------------------------------------766px------------------------------------------------------ */
 @media( max-width : 766px ){
-  .filaUno-2{
-    justify-content: center;
-    min-width: 100%;
-  }
 
-  .f2-1-info img{
-    display: flex;
-  }
+  
 
   .f2-2{
-    background: crimson;
-    max-width: 470px;
+    /* background: crimson; */
+    max-width: 250pxpx;
   }
 
 }
@@ -511,9 +564,16 @@ p {
 
 /* ----------------------------------------------------411px------------------------------------------------------ */
  @media( max-width : 415px ){
+
+  .cajaFilaUno-3{
+    min-width: auto;
+    max-width: auto;
+
+  }
+   
   .f2-2{
     max-width: 100%;
-    background-color: rgb(40, 192, 60);
+    /* background-color: rgb(40, 192, 60); */
   }
 
   .f4-1{
