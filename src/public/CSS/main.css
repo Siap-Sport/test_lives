@@ -42,13 +42,6 @@ body {
   border-radius: 5px;
 }
 
-
-
-
-
-
-
-
 .logo p{
   border-radius: 5px;
   padding: 3px 10px;
@@ -63,19 +56,12 @@ body {
   height: 30px;
 }
 
-
-
-
 .boxLive {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-
-
-
-
 
 .liveTx {
   border: 1px solid rgba(255, 0, 0, 0.616);
@@ -85,7 +71,6 @@ body {
 }
 
 .redesSociales {
-  /* border: 1px solid rgba(132, 145, 189, 0.527); */
   display: flex;
   justify-content: center;
   align-content: center;
@@ -152,8 +137,6 @@ p {
   background-color: #204e79da;
 }
 
-
-
 .material-icons {
   margin: 0 10px;
   color: white;
@@ -167,7 +150,6 @@ p {
 .linksDos {
   display: flex;
   width: 100%;
-  /* background-color: seagreen; */
   justify-content: center;
 }
 
@@ -179,8 +161,6 @@ p {
   background-color: rgba(0, 0, 255, 0.034);
   flex-grow: 1;
   cursor: pointer;
-
-  /* margin-left: 10px; */
 }
 
 .dedos span:hover {
@@ -188,7 +168,6 @@ p {
 }
 
 .enLineaDos {
-  /* position: relative; */
   display: flex;
   justify-content: center;
   border: 0.01px solid rgba(255, 255, 255, 0.123);
@@ -210,9 +189,6 @@ p {
   color: white;
 }
 
-
-
-
 /* --------------------------------------------------------------------------------------------------------- */
 
 /* MFLEX PRINCIPAL */
@@ -229,8 +205,6 @@ p {
   justify-content: center;
   flex-wrap: wrap;
 }
-
-
 
 
 /*  TRES CAJAS PRINCIPALES */
@@ -259,9 +233,6 @@ p {
 /* FIN TRES CAJAS PRINCIPALES */
 
 
-
-
-
 /* VIDEOOO VIVO */
 .video-vivo{
   background-color: brown;
@@ -273,10 +244,6 @@ p {
 }
 
 /* FIN VIDEOOO VIVO */
-
-
-
-
 
 
 /* CENTRO  DE LAS TRES CAJAS PRINCIPALES */
@@ -296,9 +263,6 @@ p {
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
 }
 /*FIN CENTRO  DE LAS TRES CAJAS PRINCIPALES */
-
-
-
 
 
 /* --------------------------------------------------- CAJA DENTRO ----------------------*/
@@ -336,18 +300,12 @@ p {
 /* --------------------------------------------------- FIN CAJA DENTRO  ----------------------------------*/
 
 
-
-
-
-
-
-/* FLEX COLUMNAS */
+/* FLEX COLUMNA DOS */
 .flexMainFilaDos {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 
 .filaDos {
   width: 50px;
@@ -378,10 +336,7 @@ p {
   background-color: rgb(172, 40, 212);
   flex-grow: 5;
 }
-
-
-
-
+/* FIN FLEX COLUMNA DOS */
 
 
 /* FILA 4 TABLA DOS */
@@ -394,15 +349,12 @@ p {
   max-width: 100%;
 }
 
-
-
 .f4-1-info h4{
   color: #123556;
   font-weight: 400;
   font-size: 18px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.322) ;
 }
-
 
 .f4-1-info table{
   border-collapse: separate;
@@ -419,7 +371,6 @@ p {
   color: rgb(14, 118, 149);
 }
 
-
 .f4-1-info td{
   color: white;
   background-color: rgba(255, 254, 253, 0.061);
@@ -427,12 +378,7 @@ p {
 /*FIN FILA 4 TABLA DOS */
 
 
-
-
 /* TABLA FILA SOBRE PARTIDS POR TRASMITIR */
-
-
-
 .f2-1-info{
   display: flex;
   flex-direction: column;
@@ -441,9 +387,9 @@ p {
 .f2-2 img{
   width: 100%;
 }
-
-
 /*FIN TABLA FILA SOBRE PARTIDS POR TRASMITIR */
+
+
 /* ----------------------------------------------------1516px------------------------------------------------------ */
 @media ( max-width : 1562px ){
   .f4-1{ /* Cuadro 3 */
@@ -453,11 +399,8 @@ p {
     width: 100%;
     max-width: 470px;
     min-width: 218px;
-    /* min-width: 200px; */
   }
 }
-
-
 
 
 /* ----------------------------------------------------1251px------------------------------------------------------ */
@@ -495,8 +438,6 @@ p {
 }
 
 
-
-
 /* ----------------------------------------------------1113px------------------------------------------------------ */
 @media( max-width : 1113px ){
 
@@ -505,8 +446,6 @@ p {
     max-width: auto;
     /* width: 100%; */
   }
-
-
 
 
   /* HACIENDO QUE LOS PROXIMOS PATIDOS NO SEAN MAS GRANDES QUE LA PANTALLA DE LA TRASMICION */
@@ -534,7 +473,6 @@ p {
   /* FIN HACIENDO QUE LOS PROXIMOS PATIDOS NO SEAN MAS GRANDES QUE LA PANTALLA DE LA TRASMICION */
 
 
-
   .flexMainFilaUno{
     flex-wrap: wrap;
   }
@@ -549,38 +487,29 @@ p {
     order: 1;
   }
   /*FIN - ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
-
-
 }
+
 
 /* ----------------------------------------------------766px------------------------------------------------------ */
 @media( max-width : 766px ){
   .filaUno-2{
     justify-content: center;
-    /* background-color: rgb(218, 98, 18); */
     min-width: 100%;
   }
 
   .f2-1-info img{
     display: flex;
-    /* max-width: 100%; */
   }
 
   .f2-2{
     background: crimson;
     max-width: 470px;
-    /* max-height: 450px; */
-
   }
 
 }
 
 
-
-
-
 /* ----------------------------------------------------411px------------------------------------------------------ */
-
  @media( max-width : 415px ){
   .f2-2{
     max-width: 100%;
