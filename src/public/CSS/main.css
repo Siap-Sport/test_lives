@@ -28,7 +28,7 @@ body {
 
 .loginCaja p{
   color:  #123556;
-  
+
 }
 
 .pin{
@@ -239,7 +239,7 @@ p {
   justify-content: center;
   background-color: rgb(212,   221, 94);
   flex-grow: 1;
-   order: 0; 
+   order: 0;
 }
 
 .filaUno-3{
@@ -251,7 +251,7 @@ p {
 
 .filaUno-4{
   background-color: rgb(174, 101, 233);
-  display: flex;  
+  display: flex;
   justify-content: center;
   flex-grow: 1;
   order: 2;
@@ -406,14 +406,14 @@ p {
 
 .f4-1-info table{
   border-collapse: separate;
-  width: 100%; 
+  width: 100%;
   border-spacing: 0 2px;
 }
 
 .f4-1-info th{
   font-size: 15px;
   font-weight: 500;
-  background-color: rgb(216, 211, 211); 
+  background-color: rgb(216, 211, 211);
   color: rgba(0, 0, 0, 0.342);
   margin:  15px 0;
   color: rgb(14, 118, 149);
@@ -478,8 +478,8 @@ p {
     order: 1;
   }
   /*FIN - ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
-  
-  
+
+
   .f2-1{
     display: none;
   }
@@ -490,7 +490,7 @@ p {
 
   .cajaChat {
   margin: 10px 15px 0 15px;
-  
+
 }
 }
 
@@ -500,37 +500,41 @@ p {
 /* ----------------------------------------------------1113px------------------------------------------------------ */
 @media( max-width : 1113px ){
 
+  .cajaFilaUno-3{
+    min-width: auto;
+    max-width: auto;
+    /* width: 100%; */
+  }
 
-  
-  
-  
-  
+
+
+
   /* HACIENDO QUE LOS PROXIMOS PATIDOS NO SEAN MAS GRANDES QUE LA PANTALLA DE LA TRASMICION */
   .filaUno-2{
     display: flex;
     justify-content: center;
     background-color: rgb(212,   221, 94);
     flex-grow: 1;
-     order: 0; 
+     order: 0;
   }
-  
+
   .filaUno-3{
     background-color: #00257A;
     flex-grow: 2;
     order: 1;
   }
-  
+
   .filaUno-4{
     background-color: rgb(174, 101, 233);
-    display: flex;  
+    display: flex;
     justify-content: center;
     /* flex-grow: 1; */
     order: 2;
   }
   /* FIN HACIENDO QUE LOS PROXIMOS PATIDOS NO SEAN MAS GRANDES QUE LA PANTALLA DE LA TRASMICION */
-  
-  
-  
+
+
+
   .flexMainFilaUno{
     flex-wrap: wrap;
   }
@@ -546,7 +550,7 @@ p {
   }
   /*FIN - ORDENANDO EL CUADOR DE PATIDOS POR TRASMITIR Y LA TABLA DE PUNTOS */
 
-  
+
 }
 
 /* ----------------------------------------------------766px------------------------------------------------------ */
@@ -559,16 +563,16 @@ p {
 
   .f2-1-info img{
     display: flex;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
-  
+
   .f2-2{
     background: crimson;
     max-width: 470px;
     /* max-height: 450px; */
 
   }
-  
+
 }
 
 
@@ -578,7 +582,7 @@ p {
 /* ----------------------------------------------------411px------------------------------------------------------ */
 
  @media( max-width : 415px ){
-  .f2-2{ 
+  .f2-2{
     max-width: 100%;
     background-color: rgb(40, 192, 60);
   }
@@ -586,9 +590,9 @@ p {
   .f4-1{
     max-width: 100%;
   }
-  
+
   .f4-1-info{
     width: 100%;
   }
-  
-} 
+
+}
