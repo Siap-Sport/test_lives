@@ -1,0 +1,51 @@
+/* LIBERTADORES */
+.f2-3-info{
+    margin-top: 10px;
+}
+.cajaTablaLIB table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+}
+
+.cajaTablaLIB th{
+    background-color: rgba(240, 248, 255, 0.829);
+    font-weight: 500;
+    color: #3c6fe7;
+}
+
+.cajaTablaLIB td{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+/*FIN LIBERTADORES */
+
+/* TABLA ENCUESTAS f4-1-info */
+.f4-1-info-info{
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(192, 212, 145, 0.13);
+}
+
+.f4-1-info-info-tabla{
+    padding: 15px;
+}
+
+.f4-1-info-info-tabla table{
+    width: 100%;
+}
+
+.f4-1-info-info-tabla th{
+    border-bottom: 1px solid rgba(251, 251, 251, 0.109);
+
+}
+
+.f4-1-info-info-tabla td{
+    border-bottom: 1px solid rgba(251, 251, 251, 0.109);
+
+}
+
+/*FIN TABLA ENCUESTAS f4-1-info */
+
+
