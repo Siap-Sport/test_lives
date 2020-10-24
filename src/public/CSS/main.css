@@ -72,11 +72,24 @@ body {
 
 .redesSociales {
   display: flex;
-  justify-content: center;
-  align-content: center;
   width: 100%;
   padding: 10px;
   background: rgba(255, 255, 255, 0.041);
+}
+
+.links{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.link-1{
+  flex-grow: 1;
+}
+
+.link-2{
+  flex-grow: 1;
 }
 
 .links a {

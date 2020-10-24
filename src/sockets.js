@@ -89,8 +89,15 @@ module.exports = function( io ){
 
 
         socket.on('dislike' , x => {
-            let restaData = totalDislikes[0] + x;
-            totalDislikes.splice( 0 , 1 , restaData);
+            let restaData = 0
+            if(x === true){
+                restaData = totalDislikes[0] + 1;
+                totalDislikes.splice( 0 , 1 , restaData);
+            }else{
+                restaData = totalDislikes[0] - 1;
+                totalDislikes.splice( 0 , 1 , restaData);
+            }
+
             io.sockets.emit("imprimirDislikes" , totalDislikes[0])
         })
         

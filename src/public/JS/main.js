@@ -55,19 +55,26 @@ $( function() {
     $dislikeDos.click( e => {
         e.preventDefault()
             comprovarDatos = sessionStorage.getItem('00000-154554-siap-spor-145546565')
-            if( comprovarDatos === null ){
-                socket.emit('dislike' , 1)
-                sessionStorage.setItem('00000-154554-siap-spor-145546565' , true);
+            if( comprovarDatos === null  ||  comprovarDatos === "false"){
+                socket.emit('dislike' , true)
+                pintarlo( true )
+            }else if( comprovarDatos === "true" ){
+                socket.emit('dislike' , false)
+                pintarlo( false )
             }
 
-            pintarlo( true )
     } )
 
 
     let pintarlo = ( x ) => {
         if( x == true ){
             $pintarDislike.setAttribute("style" , "color : rgb(243, 128, 128)")
+            sessionStorage.setItem('00000-154554-siap-spor-145546565' , true);
+        }else{
+            $pintarDislike.setAttribute("style" , "color : ");
+            sessionStorage.setItem('00000-154554-siap-spor-145546565' , false);
         }
+
     }
 
     comprovarDatos = sessionStorage.getItem('00000-154554-siap-spor-145546565');
@@ -76,16 +83,7 @@ $( function() {
         pintarlo( true )
     }
     
-  
-    
-/* 
-    if( comprovarDatos == "true" ){
-        console.log('pintar');
-    } */
-    
-    
-    
-    
+ 
     socket.on('enVivo' , data => {
         $enLinea.html(`En linea : ${data}`)
     })
@@ -143,7 +141,7 @@ $( function() {
      })
 
      socket.on('imprimirDislikes' , data => {
-        if(data[0] == 0){
+        if(data == 0 || data == undefined){
             $dislikeImprimir.html('');  
         }else{
             $dislikeImprimir.html(`${data}`);  
