@@ -57,7 +57,7 @@ module.exports = function( io ){
         socket.on('send message' , function( data ){  // Resive el mensaje
             io.sockets.emit('new message' , {    //De aqui envio informacion
                  msg : data,
-                 nick : "Admin"
+                 nick : "User"
             }) // Retrasmit el mensaje
         })
         
