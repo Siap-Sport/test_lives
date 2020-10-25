@@ -1,3 +1,9 @@
+ let noSE = () => {
+    $('#cajaLogin').hide();
+    $('#ocultarLogin').show();
+} 
+
+
 //Cliente
 $( function() {
 
@@ -24,10 +30,10 @@ $( function() {
     const $login = $("#login");
     const $clave = $("#clave");
     const $boton = $("#activarBoton")
-    const $inputDos = $("#activarInput")
+    const $inputDos = $("#activarInput");
     let   comprovarDatos = false;
 
-
+    
     
     $login.click( e => {
         e.preventDefault();
@@ -78,7 +84,6 @@ $( function() {
     }
 
     comprovarDatos = sessionStorage.getItem('00000-154554-siap-spor-145546565');
-    console.log(comprovarDatos);
     if( comprovarDatos == "true" ){
         pintarlo( true )
     }

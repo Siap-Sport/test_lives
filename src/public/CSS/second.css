@@ -33,6 +33,7 @@
 }
 
 .f4-1-info-info-tabla table{
+    text-align: center;
     width: 100%;
 }
 
@@ -58,4 +59,24 @@
 }
 /*FIN TITULOS*/
 
+.f4-1-info-info-tabla-LB p{
+    font-weight: 400;
+    color: white;
+}
 
+
+/* CAJA LOGIN */
+#cajaLogin{
+    cursor: pointer;
+    position: absolute;
+    top: 0  ;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-color:  #123556;
+}
+
+#ocultarLogin{
+    display: none;
+}
+/* FIN CAJA LOGIN */

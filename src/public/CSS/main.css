@@ -17,24 +17,23 @@ body {
 .loginCaja{
 
   padding: 3px 10px;
-  border: 1px solid  #123556;
   border-radius: 7px;
   position: absolute;
   right: 0;
-  margin-top: -5px;
-  color: #1180e7;
+  top: 0%;
   cursor: pointer;
 }
 
 .loginCaja p{
-  color:  #123556;
+  color: rgb(245, 245, 245);
+  /* color:  #123556; */
 
 }
 
 .pin{
   position: absolute;
-  top: 20px;
-  right: 50px;
+  top: 0;
+  right: 70px;
 }
 
 .pin input{
@@ -434,6 +433,14 @@ p {
 
 /* ----------------------------------------------------1516px------------------------------------------------------ */
 @media ( max-width : 1562px ){
+  #cajaLogin{
+    display: none;
+  }
+   
+  #ocultarLogin{
+    display: none;
+  }
+  
   .f4-1{ /* Cuadro 3 */
     display: flex;
     margin: 10px;

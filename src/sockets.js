@@ -45,7 +45,7 @@ module.exports = function( io ){
 
         socket.on('clave' , ( data , cb ) => {
 
-            if( data == "retergfd1245asd" ){
+            if( data == "AdminUno" || data == "AdminDos"){
                 cb(true)
             }else{
                 cb(false)
