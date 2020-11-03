@@ -6,7 +6,7 @@ module.exports = function( io ){
     
     let nickNames = [];
     let totalConectados = [0]
-    let enVivo = [91];
+    let enVivo = [2133];
     let totalLikes = [0];
     let totalDislikes = [0];
     io.on( 'connection' , socket => {
