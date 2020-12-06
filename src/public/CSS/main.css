@@ -42,45 +42,19 @@ body {
   color: rgba(116, 121, 170, 0.952);
 }
 
-/* MFLEX PRINCIPAL */
-.flexMainColumnas {
-  display: flex;
-  flex-direction: column;
-}
 
 /* FLEX FILAS */
 .flexMainFilaUno {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-/*  TRES CAJAS PRINCIPALES */
-.filaUno-2{
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-   order: 0;
-}
-
-.filaUno-3{
-  display: flex;
-  justify-content: center;
-  order: 1;
-}
-
-.filaUno-4{
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  order: 2;
-}
-/* FIN TRES CAJAS PRINCIPALES */
-
-/* CENTRO  DE LAS TRES CAJAS PRINCIPALES */
 .cajaFilaUno-3{
-  min-width: 630px;
-  max-width: 630px;
+  flex-grow: 1;
+}
+
+.cajaFilaUno-4{
+  flex-grow: 1;
 }
 
 .nameGame h1 {
@@ -93,3 +67,11 @@ body {
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
 }
 /*FIN CENTRO  DE LAS TRES CAJAS PRINCIPALES */
+
+/* .video-vivo iframe{
+  width: 100%;
+  height: 600px;
+}
+ */
+
+
