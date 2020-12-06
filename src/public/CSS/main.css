@@ -51,18 +51,15 @@ body {
 
 .cajaFilaUno-3{
   flex-grow: 1;
-  background-color: aqua;
 }
 
 .cajaFilaUno-4{
   flex-grow: 1;
-  background-color: rgb(60, 255, 0);
   max-width: 500px;
 }
 
 .cajaFilaUno-5{
   flex-grow: 1;
-  background-color: rgb(36, 85, 22);
   max-width: 500px;
 }
 
@@ -86,14 +83,6 @@ body {
   height: 600px;
 }
 
-@media all and (display-mode: fullscreen) {
-
-  .cajaFilaUno-3{
-    background-color: rgb(255, 0, 0);
-    height: 50px;
-  }
-  
-}
 
 
 @media (max-width: 1200px) { 
