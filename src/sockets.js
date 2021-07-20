@@ -8,10 +8,7 @@ module.exports = function( io ){
     io.on( 'connection' , socket => { //socket es la informacion del usuario que llega al servidor cuando se conecta un nuevo usuario
         console.log('Un nuevo usuario conectado');
 
-        let newUser = 1;
-        
-        let claseDB = new Conectados( 100 );
-        // claseDB.guardarDB( newUser )
+        let claseDB = new Conectados();
         
         socket.on('disconnect' , data => {
               /*   if(!socket.nickName ) return;
